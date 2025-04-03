@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini curso</title>
+    <style>
+        /* Resetando margens e padding para garantir que o layout fique limpo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página com fundo azul e alinhamento centralizado */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #003366; /* Cor de fundo azul */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Cartão que envolve o conteúdo */
+        .card {
+            background-color: #fff;
+            color: #003366; /* Cor do texto no cartão (azul) */
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Efeito de hover no cartão */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Imagem de perfil */
+        .card img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* Título e subtítulo */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #D32F2F; /* Cor vermelha */
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #D32F2F; /* Cor vermelha */
+        }
+
+        /* Links para redes sociais */
+        .social-links a {
+            margin: 10px;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Estilo específico para cada imagem das redes sociais */
+        .social-links img {
+            width: 40px;
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/TrumpPortrait.jpg/800px-TrumpPortrait.jpg" width="150px" alt="Foto Perfil">
+        <h1>Donald Trump</h1>
+        <h3>President of the USA</h3>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/_arthur_amin/" target="_blank">
+                <img src="insta.png" width="50px" alt="Instagram">
+            </a>
+            <a href="https://wa.me/5585997193770?text=Ol%C3%A1%2C%20me%20chamo%20Donald%20Trump%2C%20sou%20presidente%20dos%20EUA" target="_blank">
+                <img src="whats.png" width="50px" alt="WhatsApp">
+            </a>
+            <a href="https://github.com/ArthurAmin09" target="_blank">
+                <img src="github.png" width="50px" alt="GitHub">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
